@@ -350,33 +350,24 @@ button:hover{
     cursor: none;
 }
 
-#startup{
+#startup, #shutdown{
     background-image: url(/img/nnnoise.svg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-#logo{
+.logo{
     width: 20%;
     height: auto;
 }
 
-#at_logo{
+.at_logo{
     position: fixed;
     bottom: 1%;
     right: 1%;
     width: 2%;
     height: auto;
-}
-
-#shutdown{
-    display: none;
-    background-image: url(/img/shutdown.png);
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    
 }
 
 .blackout{
