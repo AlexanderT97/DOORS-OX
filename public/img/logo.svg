@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.84 122.73">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a16a4a;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-4 {
+        font-family: NunitoSansItalic-BoldItalic, 'Nunito Sans';
+        font-size: 24px;
+        font-style: italic;
+        font-variation-settings: 'wght' 700, 'wdth' 100, 'opsz' 12, 'YTLC' 500;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        fill: #ffc49c;
+      }
+
+      .cls-6 {
+        fill: #9ecfbc;
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <g id="Ebene_1-2" data-name="Ebene 1">
+    <g>
+      <g>
+        <rect class="cls-5" x="27.42" y=".5" width="68.99" height="89.04"/>
+        <path class="cls-1" d="M95.91,1v88.04H27.92V1h67.99M96.91,0H26.92v90.04h69.99V0h0Z"/>
+      </g>
+      <g>
+        <rect class="cls-5" x="32.44" y="5.55" width="58.96" height="83.99"/>
+        <path class="cls-1" d="M90.9,6.05v82.99h-57.96V6.05h57.96M91.9,5.05H31.94v84.99h59.96V5.05h0Z"/>
+      </g>
+      <circle class="cls-1" cx="81.93" cy="47.54" r="2.72"/>
+    </g>
+    <text class="cls-4" transform="translate(0 116.25)"><tspan class="cls-2" x="0" y="0">DOORS</tspan><tspan class="cls-3" x="82.66" y="0"> </tspan><tspan class="cls-6" x="88.15" y="0">OX</tspan></text>
+  </g>
+</svg>

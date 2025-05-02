@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BS Wahl</title>
+    <title>DOORS OX</title>
     <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/69836dacc4.js" crossorigin="anonymous" async></script>
     <link href="/img/favicon.ico" rel="icon">
@@ -12,6 +12,8 @@
 
     <!-- Startscreen -->
     <div id="startup">
+        <img src="/img/logo.svg" alt="Logo" id="logo">
+        <a href="https://alextischler.at" target="_blank" id="at_logo"><img src="img/Logo_AT.svg" alt="Logo alextischler"></a>
         <audio id="start_sound" src="/sounds/startup.mp3"></audio>
     </div>
 
@@ -27,12 +29,18 @@
             <div class="dropdown">
                 <div class="dropdown-btn" id="selectedImageDisplay">Profilbild auswählen</div>
                 <div class="dropdown-content">
-                    <img src="/img/profil_butterfly.png" alt="profil_butterfly" onclick="selectImage('profil_butterfly.png')">
-                    <img src="/img/profil_ente.png" alt="profil_ente" onclick="selectImage('profil_ente.png')">
-                    <img src="/img/profil_katze.png" alt="profil_katze" onclick="selectImage('profil_katze.png')">
-                    <img src="/img/profil_fisch.png" alt="profil_fisch" onclick="selectImage('profil_fisch.png')">
-                    <img src="/img/profil_frosch.png" alt="profil_frosch" onclick="selectImage('profil_frosch.png')">
-                    <img src="/img/profil_tropfen.png" alt="profil_tropfen" onclick="selectImage('profil_tropfen.png')">
+                    <img src="/img/butterfly.png" alt="butterfly" onclick="selectImage('butterfly.png')">
+                    <img src="/img/bear.png" alt="bear" onclick="selectImage('bear.png')">
+                    <img src="/img/cat.png" alt="cat" onclick="selectImage('cat.png')">
+                    <img src="/img/cow.png" alt="cow" onclick="selectImage('cow.png')">
+                    <img src="/img/dog.png" alt="dog" onclick="selectImage('dog.png')">
+                    <img src="/img/frog.png" alt="frog" onclick="selectImage('frog.png')">
+                    <img src="/img/gorilla.png" alt="gorilla" onclick="selectImage('gorilla.png')">
+                    <img src="/img/octopus.png" alt="octopus" onclick="selectImage('octopus.png')">
+                    <img src="/img/pig.png" alt="pig" onclick="selectImage('pig.png')">
+                    <img src="/img/rabbit.png" alt="rabbit" onclick="selectImage('rabbit.png')">
+                    <img src="/img/unicorn.png" alt="unicorn" onclick="selectImage('unicorn.png')">
+                    <img src="/img/wolf.png" alt="wolf" onclick="selectImage('wolf.png')">
                 </div>
             </div>
     
@@ -65,12 +73,12 @@
     <audio id="crack" src="/sounds/crack.mp3"></audio>
 
     <div class="privat draggable desktop_icon deletable" id="privat_desktop">
-        <img src="/img/ordner.png" alt="ordner" class="icon">
+        <img src="/img/privat.png" alt="privat ordner" class="icon">
         <p>Privat</p>
     </div>
 
     <div class="musik draggable desktop_icon deletable" id="musik_desktop">
-        <img src="/img/ordner.png" alt="ordner" class="icon">
+        <img src="/img/music.png" alt="musik ordner" class="icon">
         <p>Musik</p>
     </div>
     
@@ -192,7 +200,7 @@
 
 <div class="internet_fenster fenster draggable" id="internet_fenster">
     <div class="titel">
-        <h1>Internet Explorer</h1>
+        <h1>Internet</h1>
         <img src="/img/x.png" alt="x" id="internet_fenster_x">
     </div>
 
@@ -212,10 +220,10 @@
     <div class="inhalt mypc_inhalt">
         <div class="internet start_items" id="internet_icon">
             <img src="/img/internet.png" alt="internet">
-            <p>Internet Explorer</p>
+            <p>Internet</p>
         </div>
         <div class="editor start_items" id="editor_icon">
-            <img src="/img/notepad.webp" alt="notepad">
+            <img src="/img/notepad.png" alt="notepad">
             <p>Editor</p>
         </div>
         <div class="rechner start_items" id="rechner_icon">
@@ -223,11 +231,11 @@
             <p>Rechner</p>
         </div>
         <div class="start_items privat_icon" id="privat_icon">
-            <img src="/img/ordner_icon.png" alt="ordner">
+            <img src="/img/privat_icon.png" alt="privat ordner">
             <p>Privat</p>
         </div>
         <div class="start_items musik_icon" id="musik_icon">
-            <img src="/img/ordner_icon.png" alt="ordner">
+            <img src="/img/music_icon.png" alt="musik ordner">
             <p>Musik</p>
         </div>
     </div>
@@ -243,10 +251,10 @@
             <div class="start_fenster_left">
                 <div class="internet start_items" id="internet_icon">
                     <img src="/img/internet.png" alt="internet">
-                    <p>Internet Explorer</p>
+                    <p>Internet</p>
                 </div>
                 <div class="editor start_items" id="editor_icon">
-                    <img src="/img/notepad.webp" alt="notepad">
+                    <img src="/img/notepad.png" alt="notepad">
                     <p>Editor</p>
                 </div>
                 <div class="rechner start_items" id="rechner_icon">
@@ -257,11 +265,11 @@
 
             <div class="start_fenster_right">
                 <div class="start_items privat_icon" id="privat_icon">
-                    <img src="/img/ordner_icon.png" alt="ordner">
+                    <img src="/img/privat_icon.png" alt="privat ordner">
                     <p>Privat</p>
                 </div>
                 <div class="start_items musik_icon" id="musik_icon">
-                    <img src="/img/ordner_icon.png" alt="ordner">
+                    <img src="/img/music_icon.png" alt="music ordner">
                     <p>Musik</p>
                 </div>
                 <div class="start_items" id="mypc_icon">
@@ -331,52 +339,52 @@
     <!-- Taskleiste -->
     <footer>
         <div class="bottom_left">
-            <img src="/img/start-btn.png" alt="start-btn" id="start">
+            <img src="/img/door.png" alt="start-btn" id="start">
+            <div class="divider"></div>
             <div class="task">
-                <img src="/img/ordner_mini.png" alt="ordner_mini">
+                <img src="/img/ordner_icon.png" alt="ordner_icon">
                 <p>BS Wahl 2024</p>
             </div>
 
             <div class="task" id="internet_task">
-                <img src="/img/ie.png" alt="internet explorer">
-                <p>Internet Explorer</p>
+                <img src="/img/internet_icon.png" alt="internet">
+                <p>Internet</p>
             </div>
 
             <div class="task" id="privat_task">
-                <img src="/img/ordner_mini.png" alt="ordner_mini">
+                <img src="/img/privat_icon.png" alt="ordner_icon">
                 <p>PRIVAT!</p>
             </div>
 
             <div class="task" id="musik_task">
-                <img src="/img/ordner_mini.png" alt="ordner_mini">
+                <img src="/img/music_icon.png" alt="ordner_icon">
                 <p>Musik</p>
             </div>
 
             <div class="task" id="mypc_task">
-                <img src="/img/computer_mini.png" alt="computer_mini">
+                <img src="/img/computer_icon.png" alt="computer_icon">
                 <p>Mein Computer</p>
             </div>
 
             <div class="task" id="editor_task">
-                <img src="/img/notepad_mini.png" alt="notepad_mini">
+                <img src="/img/notepad_icon.png" alt="notepad_icon">
                 <p>Editor</p>
             </div>
 
             <div class="task" id="rechner_task">
-                <img src="/img/rechner_mini.png" alt="rechner_mini">
+                <img src="/img/rechner_icon.png" alt="rechner_icon">
                 <p>Rechner</p>
             </div>
 
             <div class="task" id="ergebnis_task">
-                <img src="/img/ordner_mini.png" alt="ordner_mini">
+                <img src="/img/ordner_icon.png" alt="ordner_icon">
                 <p>Ergebnisse</p>
             </div>
         </div>
         
 
         <div class="bottom_right">
-            <img src="/img/win-bottom.png" alt="win-bottom">
-            <p id="time">15:00</p>
+            <p id="date">15:00</p>
         </div>
         
     </footer>

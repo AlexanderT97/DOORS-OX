@@ -5,11 +5,21 @@
 }
 
 :root{
-    --blue: #0354e7;
-    --grey: #e9e7d8;
-    --black: #1e1f19;
-    --darkblue: #1a50b8;
-    --lightblue: #1395e8;
+    --green: #466752;
+    --lightblue: #ceecf8;
+    --black: #000000;
+    --lightgreen: #9ecfbc;
+    --orange: #f9c34b;
+}
+
+@font-face {
+    font-family: NunitoSans;
+    src: url(font/NunitoSans.ttf) format('truetype');
+}
+
+::selection{
+    color: var(--green);
+    background-color: white;
 }
 
 html, label{
@@ -18,36 +28,37 @@ html, label{
 
 
 body{
-    background-image: url(/img/wxp.webp);
+    background-image: url(/img/aaabstract.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
-    font-family: Tahoma;
+    font-family: 'NunitoSans', sans-serif;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    
+    color: white;
+    overflow: hidden;
 }
 
 .fenster{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--grey);
+    background-color: var(--lightgreen);
     position: absolute; 
     user-select: none;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border: 5px solid var(--blue);
+    border: 5px solid var(--green);
     top: 30%;
     left: 40%;
     
 }
 
 .titel{
-    background-color: var(--blue);
+    background-color: var(--green);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,9 +70,9 @@ body{
 
 .titel h1{
     color: white;
-    text-shadow: 2px 2px var(--black);
     font-size: 1.8rem;
-    font-family: 'Trebuchet MS';
+    font-family: 'NunitoSans', sans-serif;
+    font-weight: bold;
     margin-left: 0;
 }
 
@@ -82,52 +93,58 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--blue);
+    background-color: var(--green);
     color: white;
     height: fit-content;
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-shadow: inset 0 10px 10px rgba(19, 149, 232, 0.5);
-    font-size: 0.8rem;
+    box-shadow: inset 0 10px 10px rgba(158, 207, 188, 0.5);
+    font-size: 1rem;
+    padding: 0.2rem;
+}
+
+footer img{
+    width: 32px;
+    height: 32px;
 }
 
 .bottom_left{
     display: flex;
     align-items: center;
     margin-left: 0;
-    gap: 10px;
+    gap: 1rem;
 }
 
-#start{
-    height: 100%;
+.divider{
+    width: 2px;
+    height: 40px;
+    background-color: white;
+    margin-right: 1rem;
 }
 
 .bottom_right{
-    display: flex;
-    align-items: center;
-    gap: 10px;
     margin-right: 0;
-    background-color: var(--lightblue);
-    padding: 6.5px;
-    border-left: 2px solid var(--black);
+    padding: 0.5rem;
 }
 
 .task{
-    background-color: var(--darkblue);
-    padding: 5px 10px;
     border-radius: 10px;
     color: white;
-    box-shadow: inset 0 5px 5px rgba(19, 149, 232, 0.5);
     cursor: url(/img/Pointer.png) 0 0, auto;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.5rem;
+}
+
+.task:hover, #start{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
 }
 
 input{
-    background-color: var(--grey);
-    border: 2px solid var(--black);
+    background-color: var(--lightgreen);
+    border: 2px solid white;
     border-radius: 2px;
     margin-top: 1rem;
     font-size: 1.2rem;
@@ -138,17 +155,18 @@ input:focus{
 }
 
 button{
-    background-color: var(--grey);
-    box-shadow: inset -1px -1px 0 rgba(30, 31, 25, 0.5);
+    background-color: var(--green);
+    box-shadow: inset -1px -1px 0 rgba(158, 207, 188, 0.5);
     padding: 0.5rem;
     border-radius: 2px;
-    border: 1px solid var(--black);
+    border: 1px solid var(--lightblue);
     font-weight: bold;
     margin-top: 0.5rem;
+    color: white;
 }
 
 button:hover{
-    box-shadow: inset 0 0 1px 2px rgba(3, 84, 231, 0.5);
+    box-shadow: inset 0 0 1px 2px rgba(158, 207, 188, 0.5);
 }
 
 .icon, #maske{
@@ -198,7 +216,7 @@ button:hover{
 }
 
 .error p{
-    color: var(--black);
+    color: white;
     font-weight: bold;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -234,13 +252,13 @@ button:hover{
 .start_fenster{
     display: flex;
     flex-direction: column;
-    background-color: var(--blue);
+    background-color: var(--green);
     position: absolute;
     left: 0;
-    bottom: 31px;
+    bottom: 46px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border: 5px solid var(--blue);
+    border: 5px solid var(--green);
     z-index: 6000;
 }
 
@@ -248,10 +266,10 @@ button:hover{
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: var(--blue);
+    background-color: var(--green);
     padding: 1rem;
     border-bottom: 3px solid transparent;
-    border-image: linear-gradient(0.25turn, rgba(255, 255, 255, 0), #fe8b1b, rgba(56,2,155,0));
+    border-image: linear-gradient(0.25turn, rgba(255, 255, 255, 0), var(--lightgreen), rgba(56,2,155,0));
     border-image-slice: 1;
     color: white;
     width: 100%;
@@ -266,13 +284,14 @@ button:hover{
 
 .start_titel h2{
     margin-left: 0;
+    font-size: 2rem;
 }
 
 .start_bottom{
     display: flex;
     align-items: center;
     margin-right: 0;
-    background-color: var(--blue);
+    background-color: var(--green);
     padding: 1rem;
     width: 100%;
     color: white;
@@ -295,21 +314,23 @@ button:hover{
 .start_fenster_right{
     display: flex;
     flex-direction: column;
-    background-color: #d3e4fb;
+    background-color: var(--lightblue);
     width: 50%;
     padding: 1rem;
     padding-bottom: 3rem;
     gap: 1rem;
+    color: var(--black);
 }
 
 .start_fenster_left{
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: white;
     width: 50%;
     padding: 1rem;
     padding-bottom: 3rem;
     gap: 1rem;
+    color: var(--black);
 }
 
 .items_bottom{
@@ -330,11 +351,23 @@ button:hover{
 }
 
 #startup{
-    background-image: url(/img/startup.png);
+    background-image: url(/img/nnnoise.svg);
     background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
+}
+
+#logo{
+    width: 20%;
+    height: auto;
+}
+
+#at_logo{
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    width: 2%;
+    height: auto;
 }
 
 #shutdown{
@@ -359,7 +392,7 @@ button:hover{
 }
 
 #login{
-    background-image: url(/img/login_background.png);
+    background-image: url(/img/aaabstract.png);
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -395,11 +428,15 @@ button:hover{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--grey);
-    min-width: 200px;
+    background-color: var(--lightgreen);
+    min-width: fit-content;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    padding: 10px;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    border-radius: 5px;
+    gap: 0.5rem;
 }
 
 .dropdown-content img {
@@ -411,11 +448,11 @@ button:hover{
 }
 
 .dropdown-content img:hover {
-    border-color: var(--blue);
+    border-color: var(--green);
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: grid;
 }
 
 
@@ -452,7 +489,7 @@ textarea:focus {
     width: 100%;
     height: 2rem;
     text-align: right;
-    color: var(--black);
+    color: white;
 }
 
 .rechner_buttons {
@@ -464,7 +501,7 @@ textarea:focus {
 .rechner_btn {
     padding: 20px;
     font-size: 1.1rem;
-    background-color: var(--blue);
+    background-color: var(--green);
     color: white;
     border: none;
     border-radius: 5px;
@@ -472,11 +509,11 @@ textarea:focus {
 }
 
 .rechner_btn:hover {
-    background-color: var(--darkblue);
+    background-color: var(--black);
 }
 
 .internet_text p{
-    color: var(--black);
+    color: white;
 }
 
 
@@ -497,7 +534,7 @@ textarea:focus {
 
 
 .mypc_inhalt p{
-    color: var(--black);
+    color: white;
     width: 50%;
 }
 
@@ -546,7 +583,7 @@ input[type=radio]{
 }
 
 .optionen p, #confirmPopup p{
-    color: var(--black);
+    color: white;
     font-size: 1.5rem;
     margin: 1rem 0;
 }

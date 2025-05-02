@@ -3,11 +3,14 @@ function updateTime() {
     const now = new Date();
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
-    document.getElementById("time").textContent = `${hours}:${minutes}`;
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = String(now.getMonth() + 1).padStart(2, '0'); // +1, da Monate bei 0 beginnen
+    const year = now.getFullYear();
+    document.getElementById("date").textContent = `${day}.${month}.${year} ${hours}:${minutes}`;
 }
 
 updateTime();
-setInterval(updateTime, 1000); 
+setInterval(updateTime, 1000);
 
 
 
@@ -328,9 +331,20 @@ const start_fenster = document.getElementById("start_fenster");
 start_btn.addEventListener("click", () => {
     if (start_fenster.style.display === "flex") {
         start_fenster.style.display = "none"; // Ausblenden
+        start_btn.src = "/img/door.png"; // Bild ändern
     } else {
         start_fenster.style.display = "flex"; // Einblenden
+        start_btn.src = "/img/door_open.png"; // Bild ändern
     }
+});
+
+document.addEventListener("click", (event) => {
+    const isClickInsideStart = start_btn.contains(event.target) || start_fenster.contains(event.target);
+    if (!isClickInsideStart) {
+        start_fenster.style.display = "none"; // Ausblenden, wenn außerhalb geklickt wird
+        start_btn.src = "/img/door.png"; // Bild zurücksetzen
+    }
+
 });
 
 //Musik Player
