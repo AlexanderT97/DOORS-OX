@@ -357,6 +357,10 @@ button:hover{
     background-attachment: fixed;
 }
 
+#shutdown{
+    display: none;
+}
+
 .logo{
     width: 20%;
     height: auto;
